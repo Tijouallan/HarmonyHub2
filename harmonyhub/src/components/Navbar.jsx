@@ -1,15 +1,16 @@
 import React from "react";
 import Logo from "../img/harmonyHub.png";
 
-const Navbar = () => {
+const Accueil = () => {
     return(
         <div className="navbar">
-            <div className="container">
-                <div className="logo">
-                    <img src={Logo} alt="logo"  />
-                </div>
-            </div>
+              <div class="logo"><img src={Logo} alt="logo"  /></div>
+  <div class="right-elements">
+    <div class="connexion">Connexion</div>
+    <div class="inscription">Inscription</div>
+  </div>
+        
         </div>
     )
 }
-export default Navbar
+export default Accueil
