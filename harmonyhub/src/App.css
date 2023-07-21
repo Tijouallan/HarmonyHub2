@@ -1,15 +1,11 @@
 :root {
-  --blanc-transparent: #ffffff84;
+  --fond-post: #a5438a;
+  --gris-foncé: #212328;
+  --gradiant: linear-gradient(145deg, #b81463 0%, #3672a7 100%);
 }
 
 body {
   margin: 0;
-}
-
-.anim_gradient {
-  background: linear-gradient(135deg, rgb(184, 20, 99) 0%, rgb(0, 5, 159) 100%);
-  background-size: "400% 400%";
-  animation: "gradient 25s ease infinite";
 }
 
 @keyframes gradient {
@@ -25,11 +21,13 @@ body {
 }
 
 .navbar {
+  background: var(--gradiant);
+
+  animation: "gradient 25s ease infinite";
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: var(--blanc-transparent);
 }
 
 .logo {
@@ -51,7 +49,7 @@ body {
   margin: 2em;
 }
 .music {
-  background-color: var(--blanc-transparent);
+  background-color: var(--fond-post);
   width: 100%;
   display: flex;
   padding: 1em;
@@ -74,4 +72,33 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+/* ADD BUTTON */
+
+html,
+body {
+  height: 100%;
+  background-color: var(--gris-foncé);
+}
+.centered {
+  display: flex;
+  margin: 2em;
+}
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.plus {
+  width: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  height: 100px;
+  background: var(--fond-post);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
 }

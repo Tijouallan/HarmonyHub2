@@ -1,17 +1,34 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import Post from './components/Post';
+
 import Footer from './components/Footer';
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './components/Home';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:     <div className="App ">
+    <Navbar></Navbar>
+    <Home></Home>
+    <Footer></Footer>
+   </div>,
+  },
+]);
+
 function App() {
+
   return (
-    <div className="App anim_gradient">
-     <Navbar></Navbar>
-     <Post></Post>
-     <Footer></Footer>
-    </div>
+<div>
+ <RouterProvider router={router}/>
+</div>
   );
+
 }
 
 export default App;
