@@ -1,4 +1,4 @@
-import { mainModule } from "process";
+/* import { mainModule } from "process"; */
 
 function Main() {
 

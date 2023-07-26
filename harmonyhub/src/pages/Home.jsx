@@ -1,8 +1,8 @@
 import React from "react";
 
-import Post from "./components/Post";
+import Post from "../components/Post";
 
-import AddButton from "./components/AddButton";
+import AddButton from "../components/AddButton";
 
 const Home = () => {
   return (
